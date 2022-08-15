@@ -1,0 +1,190 @@
+body {
+  background-color: #e5e5e5;
+}
+
+header,
+footer {
+  padding: 5px 0;
+  position: fixed;
+  background: #343439;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+}
+
+header {
+  width: 100%;
+  background-color: #cf2b2b;
+  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.25);
+  height: 92px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #cf2b2b;
+  height: 92px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo h1 {
+  font-size: 44px;
+  font-family: "Righteous", cursive;
+  color: #ffffff;
+  margin-left: 21px;
+  padding-top: 8px;
+}
+
+.logo h2 {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  margin-left: 21px;
+  margin-top: 3px;
+}
+
+.menu {
+  width: 100%;
+  background-color: #e5e5e5;
+  overflow: auto;
+  padding: 120px 0;
+}
+
+.items {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.section {
+  margin-top: 15px;
+}
+
+.section-title {
+  font-size: 26px;
+  font-family: "Righteous", cursive;
+  color: #333333;
+  margin: 0 0 10px 19px;
+}
+
+.item-img {
+  width: 144px;
+  height: 87px;
+}
+
+.item-img img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+
+.item-info {
+  width: 144px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.item-selected {
+  border: 4px solid green;
+  box-sizing: border-box;
+}
+
+.no-border {
+  border: none;
+}
+
+.item {
+  background-color: #ffffff;
+  border-radius: 9px;
+  margin-left: 19px;
+  width: 172px;
+  height: 216px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.item-title {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #333333;
+  display: flex;
+  margin-top: 7px;
+}
+
+.item-subtitle {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #a6a6a6;
+  line-height: 17.58px;
+  margin-top: 7px;
+  display: flex;
+}
+
+.item-price {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-weight: 400;
+  margin-top: 10px;
+  display: flex;
+}
+
+.check {
+  color: green;
+  position: absolute;
+  font-size: 20px;
+  left: 120px;
+  bottom: 1px;
+  display: none;
+}
+
+.item-principal:active {
+  position: relative;
+  top: 2px;
+}
+
+.botao {
+  width: 364px;
+  height: 61px;
+  background-color: #cbcbcb;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.botao-habilitado {
+  background-color: #32b72f;
+}
+
+.pedido:active {
+  position: relative;
+  top: 2px;
+}
+
+.botao p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 23.44px;
+  color: #ffffff;
+  margin: auto 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}

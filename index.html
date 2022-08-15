@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+
+  </head>
+
+   
+
+  <div>
+    <header>
+      <div class="logo">
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+      </div>
+    </header>
+
+    <div class="menu">
+
+      <div class="section">
+        <div class="section-title">
+          Primeiro, seu prato
+        </div>
+        <div class="items prato">
+          <button onclick="selecionarPrato('frango','9')" class="frango item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/frango_yin_yang 2.png">
+              </div>
+              <div class="item-title">
+                Frango Yin Yang
+              </div>
+              <div class="item-subtitle">
+                Um pouco de batata,<br> um pouco de salada
+              </div>
+              <div class="item-price">
+                R$ 9,00
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+
+          <button onclick="selecionarPrato('hamburguer','11.90')" class="hamburguer item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/miniHamburguer.jpeg">
+              </div>
+              <div class="item-title">
+                Hamburguer 
+              </div>
+              <div class="item-subtitle">
+                3 mini Hamburgueres suculentos
+              </div>
+              <div class="item-price">
+                R$ 11,90
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+
+          <button onclick="selecionarPrato('carne','10')" class="carne item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/carne com batata.jpeg">
+              </div>
+              <div class="item-title">
+                Carne ao molho
+              </div>
+              <div class="item-subtitle">
+              Carne ao molho madeira
+              </div>
+              <div class="item-price">
+                R$ 10,00
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+
+          <button onclick="selecionarPrato('sushi','19.90')" class="sushi item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/sushi novo.jpeg">
+              </div>
+              <div class="item-title">
+                Sushi rápido
+              </div>
+              <div class="item-subtitle">
+                Combinado de peças.Aproveite!
+              </div>
+              <div class="item-price">
+                R$ 19,90
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+
+          <button onclick="selecionarPrato('massa','14')" class="massa item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/massanovo.jpeg">
+              </div>
+              <div class="item-title">
+                Massa do dia
+              </div>
+              <div class="item-subtitle">
+                Deliciosa massa com camarão
+              </div>
+              <div class="item-price">
+                R$ 14,00
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          Agora, sua bebida
+        </div>
+        <div class="items bebida">
+          <button onclick="selecionarBebida('refrigerante','5')" class="refrigerante item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/refrigerante.jpeg">
+              </div>
+              <div class="item-title">
+                Refrigerante
+              </div>
+              <div class="item-subtitle">
+                Lata 350ml
+              </div>
+              <div class="item-price">
+                R$ 5,00
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+
+          <button onclick="selecionarBebida('agua','4')" class="agua item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/aguanovo.jpeg">
+              </div>
+              <div class="item-title">
+                Água 
+              </div>
+              <div class="item-subtitle">
+                Garrafa 500ml
+              </div>
+              <div class="item-price">
+                R$ 4,00
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+
+          <button onclick="selecionarBebida('suco','6')" class="suco item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/suco.jpeg">
+              </div>
+              <div class="item-title">
+                Suco
+              </div>
+              <div class="item-subtitle">
+                Suco da fruta
+              </div>
+              <div class="item-price">
+                R$ 6,00
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+
+          <button onclick="selecionarBebida('cerveja','9')" class="cerveja item no-border">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="img/cerveja.jpeg">
+              </div>
+              <div class="item-title">
+                Cerveja 
+              </div>
+              <div class="item-subtitle">
+                Cerveja artesanal
+              </div>
+              <div class="item-price">
+                R$ 9,00
+              </div>
+              <div class="check">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </button>
+         </div>
+          </div>
+          <div class="section">
+            <div class="section-title">
+              Por fim, sua sobremesa
+            </div>
+            <div class="items sobremesa">
+              <button onclick="selecionarSobremesa('pudim','4')" class="pudim item no-border">
+                <div class="item-info">
+                  <div class="item-img">
+                    <img src="img/pudim 1.png">
+                  </div>
+                  <div class="item-title">
+                    Pudim cremoso
+                  </div>
+                  <div class="item-subtitle">
+                    Delicioso pudim
+                  </div>
+                  <div class="item-price">
+                    R$ 4,00
+                  </div>
+                  <div class="check">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </button>
+  
+  
+              <button onclick="selecionarSobremesa('pave','5.80')" class="pave item no-border">
+                <div class="item-info">
+                  <div class="item-img">
+                    <img src="img/pave.jpeg">
+                  </div>
+                  <div class="item-title">
+                    Pavê de Pote
+                  </div>
+                  <div class="item-subtitle">
+                    Delicia no pote
+                  </div>
+                  <div class="item-price">
+                    R$ 5,80
+                  </div>
+                  <div class="check">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </button>
+  
+              <button onclick="selecionarSobremesa('acai','9')" class="acai item no-border">
+                <div class="item-info">
+                  <div class="item-img">
+                    <img src="img/acainew.jpeg">
+                  </div>
+                  <div class="item-title">
+                    Açai brasileiro
+                  </div>
+                  <div class="item-subtitle">
+                   Cremoso na medida 
+                  </div>
+                  <div class="item-price">
+                    R$ 9,00
+                  </div>
+                  <div class="check">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </button>
+  
+              <button onclick="selecionarSobremesa('sorvete','4.50')" class="sorvete item no-border">
+                <div class="item-info">
+                  <div class="item-img">
+                    <img src="img/sorvete-cremoso-sortido.jpeg">
+                  </div>
+                  <div class="item-title">
+                    sorvete
+                  </div>
+                  <div class="item-subtitle">
+                    Bolas sortidas(cada)
+                  </div>
+                  <div class="item-price">
+                    R$ 4,50
+                  </div>
+                  <div class="check">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </button>
+       </div>
+     </div> 
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <button onclick="fecharPedido()" class="botao no-border">
+            <p class="primeira-mensagem">Selecione os 3 itens <br> para fechar o pedido</p>
+          </button>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+
+</html>
